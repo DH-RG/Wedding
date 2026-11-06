@@ -47,9 +47,6 @@ function App() {
           {/* 축의금 및 연락처 정보 섹션 */}
           <Information />
         </LazyDiv>
-
-        {/* 카카오톡/링크 공유 버튼 */}
-        <ShareButton />
       </div>
     </div>
   )
