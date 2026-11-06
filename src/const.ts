@@ -37,7 +37,7 @@ export const LOCATION = "더 화이트 베일 3층 V홀"
 /**
  * 예식 장소 상세 주소
  */
-export const LOCATION_ADDRESS = "서울시 서초구 서초중앙로 14, 더 화이트 베일 3층"
+export const LOCATION_ADDRESS = "서울시 서초구 서초중앙로 14, 더 화이트 베일"
 
 /**
  * 카카오톡 공유 시 사용할 위치 정보 주소
