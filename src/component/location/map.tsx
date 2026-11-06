@@ -155,32 +155,29 @@ const NaverMap = () => {
           네이버 지도
         </button>
 
-        {/* 카카오 내비 연동 */}
-        <button
-          onClick={() => {
-            switch (checkDevice()) {
-              case "ios":
-              case "android":
-                if (kakao)
-                  kakao.Navi.start({
-                    name: LOCATION,
-                    x: WEDDING_HALL_POSITION[0],
-                    y: WEDDING_HALL_POSITION[1],
-                    coordType: "wgs84",
-                  })
-                break
-              default:
-                window.open(
-                  `https://map.kakao.com/link/map/${KMAP_PLACE_ID}`,
-                  "_blank",
-                )
-                break
-            }
-          }}
-        >
-          <img src={knaviIcon} alt="kakao-navi-icon" />
-          카카오 내비
-        </button>
+{/* 카카오맵 연동 */}
+<button
+  onClick={() => {
+    switch (checkDevice()) {
+      case "ios":
+      case "android":
+        window.open(
+          `kakaomap://place?id=${KMAP_PLACE_ID}`,
+          "_self",
+        )
+        break
+      default:
+        window.open(
+          `https://map.kakao.com/link/map/${KMAP_PLACE_ID}`,
+          "_blank",
+        )
+        break
+    }
+  }}
+>
+  <img src={knaviIcon} alt="kakao-map-icon" />
+  카카오맵
+</button>
 
         {/* 티맵 연동 */}
         <button
