@@ -16,7 +16,7 @@ import image14 from "./image14.jpg"
 import image15 from "./image15.jpg"
 import image16 from "./image16.jpg"
 import image17 from "./image17.jpg"
-import image17 from "./image18.jpg"
+import image18 from "./image18.jpg"
 
 /**
  * 메인 커버 이미지
